@@ -67,6 +67,9 @@ jobs:
           path: ~/.sonar/cache
           key: sonar-${{ runner.os }}
 
+    #   - name: Build for Sonar
+    #     run: mvn -B clean compile
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         env:
